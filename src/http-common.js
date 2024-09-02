@@ -2,7 +2,8 @@ import axios from "axios";
 
 export default axios.create({
   // baseURL: "http://localhost:8080",
-  baseURL: 'https://real-estate-rentals-backend.onrender.com',
+  // baseURL: 'https://real-estate-rentals-backend.onrender.com',
+  baseURL: 'https://smar-investments-1-llc-backend.onrender.com',
   headers: {
     "Content-Type": "application/json",
     "Access-Control-Allow-Credentials": "true",
