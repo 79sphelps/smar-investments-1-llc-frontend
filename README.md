@@ -1,0 +1,3 @@
+# SMAR Investments 1, LLC
+
+This is the front end of the SMAR Investments 1, LLC website built using React and Redux for state management. It uses the redux-saga library to make and handle asynchronous calls to the back end. It is still a bit of a WIP with lots of room to grow. I've tried to keep it simple and focus on functionality and design. It uses the compound component pattern. It uses the Styled Components library to style the components. It also leverages Bootstrap for additional styling. 
