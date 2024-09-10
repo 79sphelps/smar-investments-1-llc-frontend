@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import { Dropdown } from "react-bootstrap";
 import { HeaderWrapper, Banner, Jumbotron } from "../components";
 import {
   // AdvancedSearchContainer,
@@ -147,6 +148,21 @@ const HeaderContainer = ({ bg, source }) => {
                     <i className="fa fa-fw fa-search">&nbsp;</i>
                   ) : null}
                   Listings
+                </HeaderWrapper.Anchor>
+              </HeaderWrapper.Item>
+            </HeaderWrapper.List>
+
+            <HeaderWrapper.List>
+              <HeaderWrapper.Item>
+                <HeaderWrapper.Anchor
+                  to="/our-services"
+                  special="true"
+                  style={{ textDecoration: "none" }}
+                >
+                  {size.width > 1262 ? (
+                    <i className="fas fa-chart-line">&nbsp;</i>
+                  ) : null}
+                  Our Services
                 </HeaderWrapper.Anchor>
               </HeaderWrapper.Item>
             </HeaderWrapper.List>

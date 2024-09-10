@@ -18,6 +18,7 @@ import {
   // AdminListingList,
   // AdminAgentsList,
   // AgentListing,
+  ScreeningCriteria
 } from "./pages";
 import { CallbackPage } from "./pages/callback-page";
 import Loading from "./components/loading";
@@ -42,6 +43,7 @@ const App = () => {
       <Route exact path="/dashboard" element={<Dashboard />} />
       <Route exact path="/messages" element={<Messages />} />
       <Route exact path="/listings" element={<Listings />} />
+      <Route exact path="/screening-criteria" element={<ScreeningCriteria />} />
       {/* <Route exact path="/listing" component={ isAuthenticated ? Listings : Home} />  */}
       <Route
         exact

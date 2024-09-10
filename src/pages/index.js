@@ -16,3 +16,4 @@ export { default as Messages } from "./messages";
 // export { default as AdminListingList } from "./admin-lisitng";
 // export { default as AdminAgentsList } from "./admin-agents";
 // export { default as AgentListing } from "./agent-listing";
+export { default as ScreeningCriteria } from "./screening-criteria";

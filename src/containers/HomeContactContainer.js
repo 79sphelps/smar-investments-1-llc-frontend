@@ -72,7 +72,7 @@ const HomeContactContainer = () => {
                   <Section.Text>
                   Moving and purchasing a home is a big transaction. We work with everyone from relocating clients to locals and understand that moving into a new home or community, or even a new state, is a big transition. It is a top priority to help our clients become acquainted with local resources, schools and neighbors around them.
                   <br /> <br />
-                  Finding that right fit is extremely important to us because meeting and exceeding our client’s goals is always one of our main objectives.
+                  Finding that right fit is extremely important to us because meeting and exceeding our client's goals is always one of our main objectives.
                   </Section.Text>
                 </Section.FlexItem>
               </Section.Flex>
