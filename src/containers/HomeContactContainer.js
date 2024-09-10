@@ -43,22 +43,26 @@ const HomeContactContainer = () => {
         <Section.Content>
           <Section.Flex>
             <Section.FlexItem width="70%">
-              <Section.SubTitle size="1">Contact Us</Section.SubTitle>
+              <Section.SubTitle size="1">Who We Are</Section.SubTitle>
               <Section.Text>
-              With her experience and position as a local broker in conjunction with an extensive marketing background, Rachel has significant advantages she can use to find your next home.
+              SMAR Investments 1, LLC is a property rentals company located in Portland, Oregon. We are locally owned and we exclusively manage a handful of properties in Oregon and Florida. We manage a small roster of mostly residential properties.
               <br /> <br />
-              Seasoned sales, marketing and analytical skills established by 5 years of corporate and agency experience.
-              She has an extensive network of brokers as well as local buyers and sellers to prospect on your behalf.
+              SMAR Investments has been managing and leasing residential property in the Clackamas, Or area for over 16 years. Each of our properties is well-maintained, well-managed and located in great locations.
               <br /> <br />
-              She specializes in all residential areas all across the state, doing business in the Greater Portland area, the Oregon Coast, Bend to Medford.
+              We combine years of experience, superior customer service and the latest technology to streamline the rental process. We make finding and leasing your next property as easy as possible.
+              <br /> <br />
+              See for yourself. View our current vacancies (TBD) and fill out an application today (TBD). Contact us with your questions and to schedule a personal visit.
+              <br /> <br />
+              We invite you to see how our locally owned company can serve you.
               </Section.Text>
               <Section.Flex>
                 <Section.FlexItem width="50%">
-                  <Section.SubTitle>Meet SMAR Investments 1, LLC</Section.SubTitle>
+                  <Section.SubTitle>What We Do</Section.SubTitle>
                   <Section.Text>
-                  Rachel is entrepreneurial and business-minded which lends itself well to real estate. She provides expert analysis and exclusive insights as well as cutting edge strategies based on her local market knowledge.
-                  <br /> <br />
-                  When you decide to work with Rachel, you get Rachel. She prides herself on being the agent that is front and center every step of the way for her clients. She is an active listener, always anticipating the needs of her clients. She does her homework and stays up-to-date on the latest housing updates. When it comes to a transaction she attends to every detail from start to finish.
+                  We are locally owned and we exclusively manage a handful of properties. SMAR has been managing and leasing residential property in the Clackamas, OR area for over 16 years. 
+                  {/* We have been managing U-Store self storage for over 40 years in Portland and surrounding areas ensuring safe, secure and affordable storage.  We are also uniquely positioned to offer full service records management through Business Records Center.    */}
+                  {/* <br /> <br />
+                  We invite you to see how our locally owned company can serve you. Contact us today! */}
                   </Section.Text>
                 </Section.FlexItem>
                 <Section.FlexItem width="50%">
@@ -66,9 +70,9 @@ const HomeContactContainer = () => {
                     Get Instant Support From Us
                   </Section.SubTitle>
                   <Section.Text>
-                  Moving and purchasing a home is a big transaction. Rachel works with everyone from relocating clients to locals and understands that moving into a new home or community, or even a new state, is a big transition. She currently specializes in the Lake Oswego, West Linn, Dunthorpe, southwest Portland, Wilsonville, Tigard and Tualatin areas. It’s her top priority to help her clients become acquainted with local resources, schools and neighbors around them.
+                  Moving and purchasing a home is a big transaction. We work with everyone from relocating clients to locals and understand that moving into a new home or community, or even a new state, is a big transition. It is a top priority to help our clients become acquainted with local resources, schools and neighbors around them.
                   <br /> <br />
-                  Whether it’s a luxury listing or a single family residential, Rachel always brings in her full arsenal of marketing strategies and customizes every listing’s marketing plan. Finding that right fit is extremely important to her because meeting and exceeding her client’s goals is always her main objective.
+                  Finding that right fit is extremely important to us because meeting and exceeding our client’s goals is always one of our main objectives.
                   </Section.Text>
                 </Section.FlexItem>
               </Section.Flex>
