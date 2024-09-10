@@ -56,7 +56,7 @@ const HomeContactContainer = () => {
                 <Section.FlexItem width="50%">
                   <Section.SubTitle>Meet SMAR Investments 1, LLC</Section.SubTitle>
                   <Section.Text>
-                  Rachel Phelps takes a concierge approach to real estate. She comes from a background in medical legal work where she brokered physicians for personal injury and medical malpractice cases. Rachel is entrepreneurial and business-minded which lends itself well to real estate. She provides expert analysis and exclusive insights as well as cutting edge strategies based on her local market knowledge.
+                  Rachel is entrepreneurial and business-minded which lends itself well to real estate. She provides expert analysis and exclusive insights as well as cutting edge strategies based on her local market knowledge.
                   <br /> <br />
                   When you decide to work with Rachel, you get Rachel. She prides herself on being the agent that is front and center every step of the way for her clients. She is an active listener, always anticipating the needs of her clients. She does her homework and stays up-to-date on the latest housing updates. When it comes to a transaction she attends to every detail from start to finish.
                   </Section.Text>
