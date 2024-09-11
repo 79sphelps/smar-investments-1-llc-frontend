@@ -50,8 +50,8 @@ const SideNavigationContainer = ({
           />
         </SideNavigation.Cross>
         <SideNavigation.Header>
-          <SideNavigation.Title>Real Home</SideNavigation.Title>
-          <SideNavigation.Text>The Home You Deserve</SideNavigation.Text>
+          <SideNavigation.Title>SMAR Investments 1, LLC</SideNavigation.Title>
+          <SideNavigation.Text>Find Your Home Here</SideNavigation.Text>
         </SideNavigation.Header>
 
         <SideNavigation.Links>

@@ -50,11 +50,11 @@ const ContactAgentContainer = ({ property }) => {
         </Property.ContactItem>
         <Property.ContactItem>
           {/* <Property.Subtitle>{property.agent.name}</Property.Subtitle> */}
-          <Property.Subtitle>Steve Phelps</Property.Subtitle>
+          <Property.Subtitle>Rachel Phelps</Property.Subtitle>
           <Property.ContactList>
             <Property.ListItem>
               <Property.Icon name="fas fa-phone-alt"></Property.Icon>
-              <Property.Text>+503-462-2135</Property.Text>
+              <Property.Text>+503-349-2799</Property.Text>
             </Property.ListItem>
           </Property.ContactList>
         </Property.ContactItem>

@@ -55,7 +55,7 @@ const ScreeningCriteria = () => {
   return (
     <>
       <HeaderContainer bg="true" source="/images/banners/banner4.jpg" />
-
+    
       <Section bgColor="--bs-fade-info">
         <Section.InnerContainer>
           <Property.Content>

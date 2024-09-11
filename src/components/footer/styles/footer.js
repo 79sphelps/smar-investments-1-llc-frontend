@@ -25,7 +25,8 @@ export const Content = styled.div`
 export const Item = styled.div`
   width: 25%;
   padding-right: 24px;
-  @media only screen and (max-width: 768px) {
+  // @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 875px) {
     width: 50%;
   }
   @media only screen and (max-width: 600px) {
