@@ -29,9 +29,9 @@ export const formErrors = {
         required: true,
         error: "Zip code not valid."
     },
-    "price": {
+    "rent": {
         required: true,
-        error: "Price is not valid."
+        error: "Rent amount is not valid."
     },
     "beds": {
         required: true,
@@ -76,9 +76,9 @@ export const validateInput = (name, value) => {
         let pattern = /^\d{5}(?:[-\s]\d{4})?$/;
         return !pattern.test(value) ? true : false;
 
-      case "price":
-        let pricePattern = /^\$\d+(?:[.,]\d+)*$/;
-        return !pricePattern.test(value) ? true : false;
+      case "rent":
+        let rentPattern = /^\$\d+(?:[.,]\d+)*$/;
+        return !rentPattern.test(value) ? true : false;
 
       case "beds":
         let bedPattern = /^\d{1}(?:.\d{1})*$/;

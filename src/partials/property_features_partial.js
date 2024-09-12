@@ -165,8 +165,8 @@ export const PropertyAdditionalDetails = ({ property }) => {
       <Property.InfoContent contentShown={additionalDetailsShown}>
         <Property.InfoItem>
           <Property.Text>
-            <Property.Span>Price : </Property.Span>
-            {property.price}
+            <Property.Span>Rent : </Property.Span>
+            {property.rent}
           </Property.Text>
           <Property.Text>
             <Property.Span>Beds : </Property.Span>

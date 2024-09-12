@@ -15,3 +15,4 @@ export { default as MessagesContainer } from "./MessagesContainer";
 // export { default as ChangePasswordContainer } from "./ChangePasswordContainer";
 // export { default as AdminAgentListing } from "./AdminAgentListing";
 // export { default as AdminAllLisitngContainer } from "./AdminAllLisitngContainer";
+export { default as OurServicesContainer } from "./OurServicesContainer";

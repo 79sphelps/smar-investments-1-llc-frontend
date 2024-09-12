@@ -26,7 +26,7 @@ const AddListing = () => {
     city: "",
     state: "",
     zip: "",
-    price: "",
+    rent: "",
     description: "",
     images: [],
     beds: "",
@@ -45,7 +45,7 @@ const AddListing = () => {
     cityError: false,
     stateError: false,
     zipError: false,
-    priceError: false,
+    rentError: false,
     bedsError: false,
     bathsError: false,
     sqftError: false,
@@ -62,7 +62,7 @@ const AddListing = () => {
       formErrorObject.cityError ||
       formErrorObject.stateError ||
       formErrorObject.zipError ||
-      formErrorObject.priceError ||
+      formErrorObject.rentError ||
       formErrorObject.bedsError ||
       formErrorObject.bathsError ||
       formErrorObject.sqftError ||
@@ -233,13 +233,13 @@ const AddListing = () => {
                   borderRadius: "15px",
                 }}
                 type="text"
-                placeholder="price"
-                name="price"
-                value={formData.price}
+                placeholder="rent"
+                name="rent"
+                value={formData.rent}
                 onChange={handleChange}
               />
-              {formErrorObject.priceError && (
-                <FormError msg={formErrors["price"].error} />
+              {formErrorObject.rentError && (
+                <FormError msg={formErrors["rent"].error} />
               )}
               <Form.Input
                 style={{

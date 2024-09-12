@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  HeaderContainer,
+  // HeaderContainer,
+  OurServicesContainer,
   //   FeaturedListingContainer,
   // FeaturedAgentsContainer,
-  HomeContactContainer,
+  // HomeContactContainer,
+
   FooterContainer,
 } from "../containers";
 // import { selectRentals } from "../redux/selectors";
@@ -54,7 +56,8 @@ const ScreeningCriteria = () => {
 
   return (
     <>
-      <HeaderContainer bg="true" source="/images/banners/banner4.jpg" />
+      {/* <HeaderContainer bg="true" source="/images/banners/banner3.jpg" /> */}
+      <OurServicesContainer bg="true" source="/images/banners/banner3.jpg" />
     
       <Section bgColor="--bs-fade-info">
         <Section.InnerContainer>

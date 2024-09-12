@@ -109,7 +109,7 @@ const Listing = () => {
       zip: formData.zip,
       images: formData.images,
       description: formData.description,
-      price: formData.price,
+      rent: formData.rent,
       beds: formData.beds,
       baths: formData.baths,
       sqft: formData.sqft,
@@ -193,8 +193,9 @@ const Listing = () => {
                 </Property.HeaderLeft>
                 <Property.HeaderRight>
                   <Property.Title>
-                    Price {"   "}
-                    {property.price}
+                    Rent {"   "}
+                    {/* {property.price} */}
+                    {property.rent}
                     <Property.Span>
                       {property.type === "rental" ? "/ Month" : ""}
                     </Property.Span>
@@ -373,14 +374,14 @@ const Listing = () => {
                           borderRadius: "15px",
                         }}
                         type="text"
-                        placeholder="price"
-                        name="price"
-                        value={formData.price || ""}
+                        placeholder="rent"
+                        name="rent"
+                        value={formData.rent || ""}
                         onChange={handleChange}
                         onClick={initializeFormData}
                       />
-                      {formErrorObject.priceError && (
-                        <FormError msg={formErrors["price"].error} />
+                      {formErrorObject.rentError && (
+                        <FormError msg={formErrors["rent"].error} />
                       )}
                       <Form.Input
                         style={{
