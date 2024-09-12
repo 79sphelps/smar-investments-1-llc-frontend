@@ -42,34 +42,38 @@ const OurServices = () => {
       {/* <FeaturedListingContainer /> */}
       {/* <HomeContactContainer /> */}
       <Section bgColor="--bs-fade-info">
-        <Section.InnerContainer>
-          {/* <DashboardContainer title="Inbox Messages"> */}
-          {/* <MessagesContainer /> */}
-          {/* </DashboardContainer> */}
-          Looking For A Home?
-          <br />
-          <br />
-          APM is American Property Management of Portland and we've been part of
-          the real estate and property management industry in the area since
-          1958. We are a locally owned company dedicated to helping residents
-          find quality living spaces.
-          <br />
-          <br />
-          We manage a roster of properties in Portland, convenient to
-          restaurants, dining and entertainment options. Our apartments present
-          a variety of amenities and features and each of our buildings has its
-          own personality.
-          <br />
-          <br />
-          We provide professional management, responsive maintenance and
-          exceptional locations. View our current vacancies and fill out an
-          application to reserve your space today.
-          <br />
-          <br />
-          If you are moving to or within Portland, Oregon, make it easy on
-          yourself. Choose your next apartment through APM. We are local,
-          experienced, and we care.
-        </Section.InnerContainer>
+        <Section.InnerContainer2>
+
+          <Section.Header></Section.Header>
+          <Section.Content2>
+            <Section.Flex2>
+              <Section.FlexItem width="90%">
+                <Section.SubTitle size="1">
+                  Looking For A Home?
+                </Section.SubTitle>
+                <Section.Text2>
+                  SMAR Investments 1, LLC has been been
+                  part of the real estate and property management industry in
+                  the area since 2022. We are a locally owned company dedicated
+                  to helping residents find quality living spaces.
+                  <br /> <br />
+                  We manage a roster of properties in Portland, convenient to
+                  restaurants, dining and entertainment options. Our apartments
+                  present a variety of amenities and features and each of our
+                  buildings has its own personality.
+                  <br /> <br />
+                  We provide professional management, responsive maintenance and
+                  exceptional locations. View our current vacancies and fill out
+                  an application to reserve your space today.
+                  <br /> <br />
+                  If you are moving to or within Portland, Oregon, make it easy
+                  on yourself. Choose your next apartment through SMAR. We are
+                  local, experienced, and we care.
+                </Section.Text2>
+              </Section.FlexItem>
+            </Section.Flex2>
+          </Section.Content2>
+        </Section.InnerContainer2>
       </Section>
       <FooterContainer />
     </>

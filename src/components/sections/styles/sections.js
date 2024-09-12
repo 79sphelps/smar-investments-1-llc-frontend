@@ -6,7 +6,8 @@ export const Container = styled.div`
     `
     var(${bgColor})
   `};
-  min-height: 80vh;
+  // min-height: 80vh;  // ORIGINAL
+  min-height: 50vh;
   padding: 24px 0px;
 `;
 
@@ -38,12 +39,33 @@ export const Text = styled.p`
   width: 80%;
 `;
 
+export const Text2 = styled.p`
+  color: var(--bs-gray);
+  font-size: 0.9rem;
+  // width: 80%;
+`;
+
 export const Content = styled.div`
   min-height: 70vh;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    width: 100%;
+  }
+`;
+
+export const Content2 = styled.div`
+  // min-height: 70vh;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
@@ -105,6 +127,24 @@ export const InnerContainer = styled.div`
   }
 `;
 
+export const InnerContainer2 = styled.div`
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  width: 100%;
+  margin: 0px auto;
+  // height: 100%;
+  @media only screen and (max-width: 768px) {
+    width: 95%;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 95%;
+  }
+`;
+
 export const Flex = styled.div`
   display: flex;
   justify-content: space-between;
@@ -120,6 +160,23 @@ export const Flex = styled.div`
     align-items: center;
   }
 `;
+
+export const Flex2 = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  // height: 100%;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
 export const FlexItem = styled.div`
   height: 100%;
 
