@@ -11,8 +11,10 @@ import {
   Title,
   Location,
   Content,
+  Content2,
   Left,
   Right,
+  Center,
   Gallery,
   ImageContainer,
   Image,
@@ -83,6 +85,15 @@ Property.Location = ({ children, ...restProps }) => {
 Property.Content = ({ children, ...restProps }) => {
   return <Content {...restProps}>{children}</Content>;
 };
+
+Property.Content2 = ({ children, ...restProps }) => {
+  return <Content2 {...restProps}>{children}</Content2>;
+};
+
+Property.Center = ({ children, ...restProps }) => {
+  return <Center {...restProps}>{children}</Center>;
+};
+
 Property.Left = ({ children, ...restProps }) => {
   return <Left {...restProps}>{children}</Left>;
 };

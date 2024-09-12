@@ -127,6 +127,33 @@ export const Content = styled.div`
     align-items: flex-start;
   }
 `;
+
+export const Content2 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
+
+export const Center = styled.div`
+  // width: 68%;
+  width: 90%;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
 export const Left = styled.div`
   width: 68%;
   @media only screen and (max-width: 600px) {

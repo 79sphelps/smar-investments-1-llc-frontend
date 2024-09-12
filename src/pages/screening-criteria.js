@@ -23,7 +23,7 @@ import { Section, Property, Loading } from "../components";
 import {
   RentalAgreements,
   ScreeningCharge,
-  SecurityDeposit,
+  // SecurityDeposit,
   ApplicantIdentification,
   ApplicantRentalHistory,
   ApplicantSufficientIncome,
@@ -60,9 +60,11 @@ const ScreeningCriteria = () => {
       <OurServicesContainer bg="true" source="/images/banners/banner3.jpg" />
     
       <Section bgColor="--bs-fade-info">
-        <Section.InnerContainer>
-          <Property.Content>
-            <Property.Left>
+        {/* <Section.InnerContainer> */}
+        <Section.InnerContainer2>
+          <Property.Content2>
+            {/* <Property.Left> */}
+            <Property.Center>
               <RentalAgreements
                 description={
                   "We process Rental Agreements on a first come, first serve basis, and process only one agreement at a time."
@@ -126,9 +128,11 @@ const ScreeningCriteria = () => {
                     ""
                 }
                 />
-            </Property.Left>
-          </Property.Content>
-        </Section.InnerContainer>
+            </Property.Center>
+          </Property.Content2>
+          {/* </Property.Content> */}
+        </Section.InnerContainer2>
+        {/* </Section.InnerContainer> */}
       </Section>
       {/* <HomeContactContainer /> */}
       <FooterContainer />

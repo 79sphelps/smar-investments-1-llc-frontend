@@ -18,3 +18,4 @@ export { default as Messages } from "./messages";
 // export { default as AgentListing } from "./agent-listing";
 export { default as ScreeningCriteria } from "./screening-criteria";
 export { default as OurServices } from "./our-services";
+export { default as FAQ } from "./faq";
