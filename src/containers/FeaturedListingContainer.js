@@ -15,7 +15,9 @@ const FeaturedListingContainer = () => {
         window.location.reload();
       }
     };
-    dispatch(getRentals());
+    if (listProperties.length === 0) {
+      dispatch(getRentals());
+    }
   }, [dispatch]);
 
   if (listProperties.length === 0) {

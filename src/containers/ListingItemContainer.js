@@ -9,7 +9,7 @@ const ListingItemContainer = ({ featured, width }) => {
       {featured && featured.images ? (
         <Listing width={width}>
           <Listing.Top>
-            <Listing.Image source={featured.images[0]} onClick={() => navigate(`/rentals/${featured._id}`)}/>
+            <Listing.Image source={featured.images[0]} loading="lazy" onClick={() => navigate(`/rentals/${featured._id}`)}/>
             <Listing.TopItem>
               <Listing.TopItemContainer>
                 <Listing.TopItemInfo>
