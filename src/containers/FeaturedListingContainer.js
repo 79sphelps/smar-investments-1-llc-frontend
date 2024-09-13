@@ -20,9 +20,9 @@ const FeaturedListingContainer = () => {
     }
   }, [dispatch]);
 
-  if (listProperties.length === 0) {
-    return <Loading />
-  }
+  // if (listProperties.length === 0) {
+  //   return <Loading />
+  // }
 
   return (
     <Section bgColor="--bs-light">

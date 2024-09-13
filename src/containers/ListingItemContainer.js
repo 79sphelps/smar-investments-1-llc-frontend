@@ -1,15 +1,23 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Listing } from "../components";
+import { Listing, Loading } from "../components";
 
 const ListingItemContainer = ({ featured, width }) => {
   const navigate = useNavigate();
   return (
     <>
-      {featured && featured.images ? (
+      {/* {featured && featured.images ? ( */}
+      {featured ? (
         <Listing width={width}>
           <Listing.Top>
-            <Listing.Image source={featured.images[0]} loading="lazy" onClick={() => navigate(`/rentals/${featured._id}`)}/>
+
+            { featured.images && featured.images[0] ? (
+              <Listing.Image source={featured.images[0]} loading="lazy" onClick={() => navigate(`/rentals/${featured._id}`)}/>
+            ) : (
+              <Loading />
+            )}
+            {/* <Listing.Image source={featured.images[0]} loading="lazy" onClick={() => navigate(`/rentals/${featured._id}`)}/> */}
+            
             <Listing.TopItem>
               <Listing.TopItemContainer>
                 <Listing.TopItemInfo>
