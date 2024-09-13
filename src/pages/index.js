@@ -19,3 +19,4 @@ export { default as Messages } from "./messages";
 export { default as ScreeningCriteria } from "./screening-criteria";
 export { default as OurServices } from "./our-services";
 export { default as FAQ } from "./faq";
+export { default as Contact } from "./contact";

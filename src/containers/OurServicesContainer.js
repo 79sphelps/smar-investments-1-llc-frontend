@@ -119,8 +119,7 @@ const OurServicesContainer = ({ bg, source }) => {
               </HeaderWrapper.Item>
             </HeaderWrapper.List>
 
-
-            <HeaderWrapper.List>
+            {/* <HeaderWrapper.List>
               <HeaderWrapper.Item>
                 <HeaderWrapper.Anchor
                   to="/availability"
@@ -133,7 +132,7 @@ const OurServicesContainer = ({ bg, source }) => {
                   Availability
                 </HeaderWrapper.Anchor>
               </HeaderWrapper.Item>
-            </HeaderWrapper.List>
+            </HeaderWrapper.List> */}
 
             <HeaderWrapper.List>
               <HeaderWrapper.Item>
@@ -158,7 +157,7 @@ const OurServicesContainer = ({ bg, source }) => {
                   style={{ textDecoration: "none" }}
                 >
                   {size.width > 1262 ? (
-                    <i className="fas fa-chart-line">&nbsp;</i>
+                    <i className="fa fa-question-circle">&nbsp;</i>
                   ) : null}
                   FAQ
                 </HeaderWrapper.Anchor>
@@ -173,13 +172,12 @@ const OurServicesContainer = ({ bg, source }) => {
                   style={{ textDecoration: "none" }}
                 >
                   {size.width > 1262 ? (
-                    <i className="fas fa-chart-line">&nbsp;</i>
+                    <i className="fa fa-user-circle-o">&nbsp;</i>
                   ) : null}
                   Contact
                 </HeaderWrapper.Anchor>
               </HeaderWrapper.Item>
             </HeaderWrapper.List>
-
 
             <HeaderWrapper.List side="side">
               <HeaderWrapper.Item>
@@ -197,7 +195,8 @@ const OurServicesContainer = ({ bg, source }) => {
           <Jumbotron.Left>
             <Jumbotron.Title>Find Your Home Here</Jumbotron.Title>
             <Jumbotron.Text>
-              Fresh Ideas | Personal Service | Proven Results
+              {/* Fresh Ideas | Personal Service | Proven Results */}
+              Our Services
             </Jumbotron.Text>
           </Jumbotron.Left>
           {/* <Jumbotron.Right> */}

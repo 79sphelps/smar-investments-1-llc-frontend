@@ -27,7 +27,8 @@ const FooterContainer = () => {
             </Footer.List>
           </Footer.Item>
           <Footer.Item>
-            <Footer.Subtitle>Quick Links</Footer.Subtitle>
+            {/* <Footer.Subtitle>Quick Links</Footer.Subtitle> */}
+            <Footer.Title>Quick Links</Footer.Title>
             <Footer.List>
               <Footer.ListItem>
                 <Footer.Anchor to="/">Home</Footer.Anchor>
@@ -40,6 +41,9 @@ const FooterContainer = () => {
               </Footer.ListItem>
               <Footer.ListItem>
                 <Footer.Anchor to="/faq">FAQs</Footer.Anchor>
+              </Footer.ListItem>
+              <Footer.ListItem>
+                <Footer.Anchor to="/contact">Contact</Footer.Anchor>
               </Footer.ListItem>
               {/* <Footer.ListItem>
                 <Footer.Anchor to="/dashboard">Account</Footer.Anchor>

@@ -13,6 +13,7 @@ import {
   Dashboard,
   // UserProfile,
   Messages,
+  Contact,
   // Password,
   // AddLisiting,
   // AdminListingList,
@@ -48,6 +49,7 @@ const App = () => {
       <Route exact path="/our-services" element={<OurServices />} />
       <Route exact path="/screening-criteria" element={<ScreeningCriteria />} />
       <Route exact path="/faq" element={<FAQ />} />
+      <Route exact path="/contact" element={<Contact />} />
       {/* <Route exact path="/listing" component={ isAuthenticated ? Listings : Home} />  */}
       <Route
         exact

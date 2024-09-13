@@ -12,7 +12,7 @@ const ListingItemContainer = ({ featured, width }) => {
           <Listing.Top>
 
             { featured.images && featured.images[0] ? (
-              <Listing.Image source={featured.images[0]} loading="lazy" onClick={() => navigate(`/rentals/${featured._id}`)}/>
+              <Listing.Image loading="lazy" source={featured.images[0]} onClick={() => navigate(`/rentals/${featured._id}`)}/>
             ) : (
               <Loading />
             )}
