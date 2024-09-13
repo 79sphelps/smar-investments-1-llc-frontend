@@ -3,12 +3,16 @@ import ModalImage from "react-modal-image";
 import { Property } from "../components";
 
 
-export const PropertGallery = ({ image }) => {
+export const PropertGallery = ({ images }) => {
+
+
+
   return (
     <Property.Gallery>
-        {image.map((i, idx) => (
+        {images.map((i, idx) => (
             <Property.ImageContainer key={idx}>
               <ModalImage
+                loading="lazy"
                 small={i}
                 large={i}
                 alt="image"

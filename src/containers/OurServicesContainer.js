@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
 import { HeaderWrapper, Banner, Jumbotron } from "../components";
 import {
   // AdvancedSearchContainer,
@@ -10,8 +10,8 @@ import {
 const OurServicesContainer = ({ bg, source }) => {
   // const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
-  const { isAuthenticated, loginWithRedirect } = useAuth0();
-  const { logout } = useAuth0();
+  // const { isAuthenticated, loginWithRedirect } = useAuth0();
+  // const { logout } = useAuth0();
   const [sideNavShown, setSideNavShown] = useState(false);
   const [sideNavHidden, setSideNavHidden] = useState(true);
   // const [fixed, setFixed] = useState(false);
@@ -29,17 +29,18 @@ const OurServicesContainer = ({ bg, source }) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const logoutWithRedirect = () =>
-    logout({
-      returnTo: window.location.origin,
-    });
+  // const logoutWithRedirect = () =>
+  //   logout({
+  //     returnTo: window.location.origin,
+  //   });
 
   // const onUpdateActiveLink = (value) => {
   //   setActiveLink(value);
   // };
 
   const changeBackgroundColorAndPosition = () => {
-    if (window.pageYOffset > 100) {
+    // if (window.pageYOffset > 100) {
+    if (window.scrollY > 100) {
       fixed = true; // setFixed(true);
     } else {
       fixed = false; // setFixed(false);

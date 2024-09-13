@@ -39,7 +39,8 @@ const HeaderContainer = ({ bg, source }) => {
   // };
 
   const changeBackgroundColorAndPosition = () => {
-    if (window.pageYOffset > 100) {
+    // if (window.pageYOffset > 100) {
+    if (window.scrollY > 100) {
       fixed = true; // setFixed(true);
     } else {
       fixed = false; // setFixed(false);
