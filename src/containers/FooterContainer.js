@@ -11,7 +11,7 @@ const FooterContainer = () => {
             <Footer.Text>
               12021 SE 104th Ct, Happy Valley, OR 97086
             </Footer.Text>
-            <Footer.List>
+            <Footer.List style={{ }}>
               <Footer.ListItem>
                 <Footer.Icon name="fas fa-phone-alt" social="true" />
                 <Footer.Text>+503-462-2135</Footer.Text>
@@ -35,11 +35,11 @@ const FooterContainer = () => {
               <Footer.ListItem>
                 <Footer.Anchor to="/listings">Properties</Footer.Anchor>
               </Footer.ListItem>
-              {/* <Footer.ListItem>
-                <Footer.Anchor to="/agents">Agents</Footer.Anchor>
-              </Footer.ListItem> */}
               <Footer.ListItem>
-                <Footer.Anchor to="/">FAQs</Footer.Anchor>
+                <Footer.Anchor to="/our-services">Our Services</Footer.Anchor>
+              </Footer.ListItem>
+              <Footer.ListItem>
+                <Footer.Anchor to="/faq">FAQs</Footer.Anchor>
               </Footer.ListItem>
               {/* <Footer.ListItem>
                 <Footer.Anchor to="/dashboard">Account</Footer.Anchor>
