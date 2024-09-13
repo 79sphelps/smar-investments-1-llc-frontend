@@ -26,21 +26,26 @@ const FeaturedListingContainer = () => {
 
   return (
     <Section bgColor="--bs-light">
-      {listProperties && Array.isArray(listProperties) ? (
+      {/* {listProperties && Array.isArray(listProperties) ? ( */}
         <Section.InnerContainer>
           <Section.Header>
             <Section.Title>Featured Properties</Section.Title>
           </Section.Header>
           <Section.Content>
-            {listProperties.map((featured, idx) => (
+            { listProperties && Array.isArray(listProperties) ? ( 
+
+            // {listProperties.map((featured, idx) => (
+            listProperties.map((featured, idx) => (
               <ListingItemContainer key={idx} featured={featured} />
-            ))}
+            ))
+
+          ) : null}
           </Section.Content>
           <Section.Footer>
             <Section.Button>More Properties</Section.Button>
           </Section.Footer>
         </Section.InnerContainer>
-      ) : null}
+      {/* ) : null} */}
     </Section>
   );
 };
