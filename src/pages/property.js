@@ -5,7 +5,6 @@ import { Row } from "react-bootstrap";
 import { useAuth0 } from "@auth0/auth0-react";
 import {
   HeaderContainer,
-  ContactAgentContainer,
   FooterContainer,
 } from "../containers";
 import { Section, Property, Form, Loading } from "../components";
@@ -13,17 +12,12 @@ import { Image } from "../components/property/styles/property.js";
 import { getRental, updateRental } from "../redux/actions";
 import { selectCurrentRental } from "../redux/selectors/index.js";
 import {
-  PropertGallery,
-  PropertyAdditionalDetails,
-  PropertyAddress,
-  PropertyDescription,
-} from "../partials/property_features_partial.js";
-import {
   getFormErrorObject,
   formErrors,
   FormError,
 } from "../helpers/form_validation.js";
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import { PropertyContainer, PropertyAdminContainer } from "../containers/index.js";
 
 const Listing = () => {
   const navigate = useNavigate();
@@ -95,7 +89,12 @@ const Listing = () => {
       // formErrorObject.sqftError ||
       // formErrorObject.descriptionError ||
       Object.values(formErrorObject).map((v) => { if (v) return true }).includes(true) || 
-      Object.values(formData).map((v) => { if (v === "") return true }).includes(true)
+      // Object.values(formData).map((v) => { if (v === "") return true }).includes(true)
+      Object.entries(formData)
+        .map((k) => {
+          if (k[0] !== "hoa" && k[1] === "") return true;
+        })
+        .includes(true)
     );
   };
 
@@ -179,57 +178,13 @@ const Listing = () => {
   return (
     <>
       <HeaderContainer bg="false" />
+
       {property && "address" in property ? (
         !isAuthenticated ? (
-          <Section bgColor="--bs-fade-info">
-            <Section.InnerContainer>
-              <Property.Header>
-                <Property.HeaderLeft>
-                  <Property.Title>{property.address}</Property.Title>
-                  <Property.Location>
-                    <Property.Icon name="fas fa-map-marker-alt"></Property.Icon>
-                    <Property.Text>{property.city}</Property.Text>
-                  </Property.Location>
-                </Property.HeaderLeft>
-                <Property.HeaderRight>
-                  <Property.Title>
-                    Rent {"   "}
-                    {/* {property.price} */}
-                    {property.rent}
-                    <Property.Span>
-                      {property.type === "rental" ? "/ Month" : ""}
-                    </Property.Span>
-                  </Property.Title>
-                </Property.HeaderRight>
-              </Property.Header>
-              <Property.Content>
-                <Property.Left>
-                  <PropertGallery image={property.images} />
-                  {/* <PropertyFeatures features={property.features} /> */}
-                  {/* <PropertyAmenities amenities={property.amenities} /> */}
-                  {/* <PropertyAddress address={property.address} /> */}
-                  <PropertyAddress
-                    address={{
-                      street: property.address,
-                      city: property.city,
-                      state: property.state,
-                      zip: property.zip,
-                    }}
-                  />
-                  <PropertyAdditionalDetails property={property} />
-                  <PropertyDescription description={property.description} />
-                </Property.Left>
-                <Property.Right>
-                  <ContactAgentContainer property={property} />
-                  {/* <PropertyRelatedContainer
-                    property={property}
-                    featured={filteredFeatured}
-                  /> */}
-                </Property.Right>
-              </Property.Content>
-            </Section.InnerContainer>
-          </Section>
+          <PropertyContainer property={ property } />
         ) : (
+          // <PropertyAdminContainer property={ property } />
+
           <Section bgColor="--bs-fade-info">
             <Section.InnerContainer>
               <Property.Header>
@@ -599,8 +554,11 @@ const Listing = () => {
               </Form>
             </Section.InnerContainer>
           </Section>
+
         )
       ) : null}
+
+
       <FooterContainer />
     </>
   );

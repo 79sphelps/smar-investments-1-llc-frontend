@@ -16,3 +16,5 @@ export { default as MessagesContainer } from "./MessagesContainer";
 // export { default as AdminAgentListing } from "./AdminAgentListing";
 // export { default as AdminAllLisitngContainer } from "./AdminAllLisitngContainer";
 export { default as OurServicesContainer } from "./OurServicesContainer";
+export { default as PropertyContainer } from "./PropertyContainer";
+export { default as PropertyAdminContainer } from "./PropertyAdminContainer";

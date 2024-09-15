@@ -1,6 +1,6 @@
 export { default as Home } from "./home";
 export { default as Listings } from "./listings";
-export { default as Listing } from "./property";
+export { default as Listing } from "./property";    // **CHANGE THIS NAMING**
 export { default as AddListing } from "./add-listing";
 export { default as DeleteListing } from "./delete-listing";
 // export { default as Agentt } from "./agent";
