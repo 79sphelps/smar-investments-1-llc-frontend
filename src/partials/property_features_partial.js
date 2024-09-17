@@ -170,7 +170,7 @@ export const PropertyAdditionalDetails = ({ property }) => {
         <Property.InfoItem>
           <Property.Text>
             <Property.Span>Rent : </Property.Span>
-            {property.rent}
+            {property.rent}/mon
           </Property.Text>
           <Property.Text>
             <Property.Span>Beds : </Property.Span>

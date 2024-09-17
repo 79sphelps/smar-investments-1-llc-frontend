@@ -31,7 +31,7 @@ const PropertyContainer = ({ property }) => {
           <Property.HeaderRight>
             <Property.Title>
               Rent {"   "}
-              {property.rent}
+              {property.rent}/mon
               <Property.Span>
                 {property.type === "rental" ? "/ Month" : ""}
               </Property.Span>
