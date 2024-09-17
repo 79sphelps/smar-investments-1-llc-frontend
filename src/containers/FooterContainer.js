@@ -18,7 +18,7 @@ const FooterContainer = () => {
               </Footer.ListItem>
               <Footer.ListItem>
                 <Footer.Icon name="fab fa-whatsapp" social="true" />
-                <Footer.Text>+503-349-2799</Footer.Text>
+                <Footer.Text>+503-462-2135</Footer.Text>
               </Footer.ListItem>
               <Footer.ListItem>
                 <Footer.Icon name="far fa-envelope" social="true" />
