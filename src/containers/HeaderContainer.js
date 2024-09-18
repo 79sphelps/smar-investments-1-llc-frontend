@@ -91,10 +91,10 @@ const HeaderContainer = ({ bg, source }) => {
     <Banner bg={bg} source={source}>
       <HeaderWrapper bg={bg} fixed={fixed}>
         <HeaderWrapper.Container>
-          { size.width > 1014 ? ( 
+
           <HeaderWrapper.Title bg={bg}>
             <HeaderWrapper.Link
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: "none", fontSize: size.width < 600 || size.width > 900 ? "1.5rem" : "1rem" }}
               className="animate__animated animate__bounce"
               bg={bg}
               fixed={fixed}
@@ -103,7 +103,7 @@ const HeaderContainer = ({ bg, source }) => {
               SMAR Investments 1, LLC
             </HeaderWrapper.Link>
           </HeaderWrapper.Title>
-          ) : null }
+
           <HeaderWrapper.LinksContainer>
             <HeaderWrapper.List>
               <HeaderWrapper.Item>
