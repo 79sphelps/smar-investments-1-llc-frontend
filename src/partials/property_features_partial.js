@@ -4,9 +4,6 @@ import { Property } from "../components";
 
 
 export const PropertGallery = ({ image }) => {
-
-
-
   return (
     <Property.Gallery>
         {image.map((i, idx) => (
