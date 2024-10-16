@@ -1,5 +1,6 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
+import "chart.js/auto";
 
 const BarGraph = ({ properties }) => {
   const categoryArray = [
@@ -11,7 +12,8 @@ const BarGraph = ({ properties }) => {
 
   const count = Object.values(
     properties
-      .map((property) => property.category)
+      // .map((property) => property.category)
+      .map((property) => 'Rental Units')
       .reduce((prev, curr) => ((prev[curr] = ++prev[curr] || 1), prev), {})
   );
 

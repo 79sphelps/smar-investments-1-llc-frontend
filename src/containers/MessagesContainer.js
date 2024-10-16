@@ -14,10 +14,11 @@ const MessagesContainer = () => {
   useEffect(() => {
     dispatch(getMessages());
   }, [dispatch]);
+
   return (
     <Inbox>
       {messages.map((message) => (
-        <InboxItem key={message.id} message={message} />
+        <InboxItem key={message._id} message={message} />
         // <InboxItem key={message.id + "-" + Math.random()} message={message} />
       ))}
     </Inbox>
